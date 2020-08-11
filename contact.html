@@ -9,49 +9,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-   <header class="navBarTop">
-       <nav>
-          <ul>
-             <li><a href="index.html">Home</a></li>
-             <li><a href="index.html#services">Our Services</a></li>
-             <li><a href="index.html#about">About Us</a></li>
-             <li><a id="active" href="contact.html">Contact Us</a></li>
-         </ul>
-     </nav>
- </header>
- <div class="frontPageCaption" style="padding-bottom: 10vh;">
-   <div>
+ <header class="navBarTop">
+     <nav>
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="index.html#services">Our Services</a></li>
+       <li><a href="index.html#about">About Us</a></li>
+       <li><a id="active" href="contact.html">Contact Us</a></li>
+   </ul>
+</nav>
+</header>
+<div class="frontPageCaption" style="padding-bottom: 10vh;">
+ <div>
     Come<div class="boldText">Contact</div>Us
-   </div>
-   <br>
-   <i onclick="scrollToSection()" class="fa fa-angle-double-down"></i>
+</div>
+<br>
+<i onclick="scrollToSection()" class="fa fa-angle-double-down"></i>
 </div>
 
 
-<div class="contactInfoBox" id="contact-form">
-    <div class="contactFormHeader">
+<div class="contactInfoBox container" id="contact-form">
+    <div class="contactFormHeader row">
         <h3>Submit you information below, and we will reply you as soon as possible.</h3>
     </div>
-    <div class="contactFormDivider"></div>
-    <form id="contact-form" action="contact_details.php" method="post" target="_self" autocomplete="on">
-        <input type="text" id="name" name="name" placeholder="Name" size="30" required><br>
-        <input type="email" id="email" name="email" placeholder="Email Address" size="30" required><br>
-        <input type="tel" id="phone" name="phone" placeholder="Telephone No." size="30"><br>
-        <textarea type="text" id="comments" placeholder="Comments" size="30" name="comments"></textarea><br>
-        <select id="state" name="state">
-            <option value="" selected disabled>SELECT</option>
-            <option value="Queensland">QLD</option>
-            <option value="New South Wales">NSW</option>
-            <option value="Victoria">VIC</option>
-            <option value="South Australia">SA</option>
-            <option value="Western Australia">WA</option>
-            <option value="Northern Teritory">NT</option>
-            <option value="Australian Capitol Teritory">ACT</option>
-        </select><br>
-        <input type="Submit" name="Submit" id="Submit"><br>
-    </form>
-    <div class="contactFormDivider"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <form id="contact-form" action="contact_details.php" method="post" target="_self" autocomplete="on">
+                <label>Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" size="30" required><br>
+                <label>Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email Address" size="30" required><br>
+            </div>
+            <div class="col-md-6">
+                <label>Comments:</label><br>
+                <textarea type="text" id="comments" placeholder="Comments" size="30" name="comments"></textarea><br>
+                <input type="Submit" name="Submit" id="Submit"><br>
+            </form>
+        </div>
+    </div>
     <br>
+    <div class="contact-details">
     <dt>Alternativly Feel Free to:</dt>
     <dt>Call</dt>
     <dd>
@@ -62,10 +59,11 @@
     <dd>
         <a href="mailto:someone@example.com?Subject=Email%Query" target="_top">Send Mail</a>
     </dd>
+    </div>
 </div>
 
 </body>
 <footer>
-   copyright wcc 2020
+ copyright wcc 2020
 </footer>
 </html>
