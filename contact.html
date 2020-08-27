@@ -9,32 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <header class="navBarTop">
-     <nav>
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="index.html#services">Our Services</a></li>
-       <li><a href="index.html#about">About Us</a></li>
-       <li><a id="active" href="contact.html">Contact Us</a></li>
-   </ul>
-</nav>
-</header>
-<div class="frontPageCaption" style="padding-bottom: 10vh;">
- <div>
+   <header class="navBarTop">
+       <nav>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="index.html#services">Our Services</a></li>
+             <li><a href="index.html#about">About Us</a></li>
+             <li><a id="active" href="contact.html">Contact Us</a></li>
+         </ul>
+     </nav>
+ </header>
+ <div class="frontPageCaption" style="padding-bottom: 10vh;">
+   <div>
     Come<div class="boldText">Contact</div>Us
 </div>
 <br>
 <i onclick="scrollToSection()" class="fa fa-angle-double-down"></i>
 </div>
 
-
+<!-- CONTACT FORM -->
 <div class="contactInfoBox container" id="contact-form">
-    <div class="contactFormHeader row">
+    <div class="contactFormHeader">
         <h3>Submit you information below, and we will reply you as soon as possible.</h3>
+        <br>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <form id="contact-form" action="contact_details.php" method="post" target="_self" autocomplete="on">
+            <form id="contact-form" action="submit_action.php" method="post" target="_self" autocomplete="on">
                 <label>Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Name" size="30" required><br>
                 <label>Email:</label><br>
@@ -48,22 +49,26 @@
         </div>
     </div>
     <br>
-    <div class="contact-details">
-    <dt>Alternativly Feel Free to:</dt>
-    <dt>Call</dt>
-    <dd>
-        <a href="tel:xxx">+xx xxx xxx xxx</a>
-    </dd>
-    <div class="contactFormDivider"></div>
-    <dt>Email</dt>
-    <dd>
-        <a href="mailto:someone@example.com?Subject=Email%Query" target="_top">Send Mail</a>
-    </dd>
+    <div class="contact-details row">
+        <div class="col-md-12">
+            <h3>Alternativly Feel Free to:</h3>
+            <br>
+        </div>
+        <div class="col-md-6">
+            Call: <a href="tel:xxx">+xx xxx xxx xxx</a>
+        </div>
+        <div class="col-md-6">
+            Email: <a href="mailto:someone@example.com?Subject=Email%Query" target="_top">Send Mail</a>
+        </div> 
+        <div class="col-md-12">
+        </div>
     </div>
 </div>
 
+
+<br>
 </body>
 <footer>
- copyright wcc 2020
+   copyright wcc 2020
 </footer>
 </html>

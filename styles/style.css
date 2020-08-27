@@ -4,6 +4,9 @@ p, div.frontPageCaption, div.caption, .centred, .contactInfoBox, .contact-detail
   font-family: Arial, Helvetica;
   text-align: justify; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   width: 100%; }
 
@@ -11,19 +14,20 @@ header li {
   list-style-type: none; }
 
 header.navBarTop nav ul li a {
-  font-size: 14px;
+  font-size: 12px;
   float: left;
   text-decoration: none;
   text-align: center;
   color: #999;
   margin: 2px;
-  padding: 10px 12px; }
+  padding: 0 2px; }
 
 p {
   margin: 20px; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  margin: 2vh; }
 
 #active {
   text-decoration: underline; }
@@ -47,6 +51,7 @@ div.frontPageCaption, div.caption {
 .navBarTop {
   position: fixed;
   background-color: white;
+  margin: auto;
   z-index: 9; }
 
 .centred {
@@ -55,8 +60,11 @@ div.frontPageCaption, div.caption {
 .frontPageCaption {
   top: 50px; }
 
-.contactInfoBox .contact-details, .contact-details .contact-details {
+.contactInfoBox .contact-details, .contactInfoBox .contactFormHeader, .contact-details .contact-details, .contact-details .contactFormHeader {
   text-align: center; }
+
+.contact-details {
+  padding: 10vh auto; }
 
 input, textarea {
   padding: 1vh;
@@ -71,7 +79,7 @@ label {
   margin-bottom: 0; }
 
 .services-img {
-  max-width: 40vw; }
+  width: 90vw; }
 
 .fa .fa-angle-double-down {
   bottom: 0;
@@ -151,6 +159,9 @@ footer {
 
   #flip > div > div {
     margin-bottom: 80px; }
+
+  .services-img {
+    width: 40vw; }
 
   @keyframes show {
     0% {
