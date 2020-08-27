@@ -84,6 +84,11 @@ div.frontPageCaption, div.caption, {
 	top: 50px;
 }
 
+.spacer {
+	height: 2vh;
+	width: 100vw;
+}
+
 .contactInfoBox, .contact-details {
 	@extend %text_style;
 	.contact-details, .contactFormHeader {
@@ -132,11 +137,12 @@ label {
 
 .services-img {
 	width: 90vw;
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%);
+	padding: 4vh 0;
 }
 
 .fa .fa-angle-double-down {
@@ -234,6 +240,11 @@ footer {
 
 	.services-img {
 		width: 40vw;
+	}
+
+	.spacer {
+		height: 10vh;
+		width: 100vw;
 	}
 
 	@keyframes show {

@@ -61,6 +61,10 @@ div.frontPageCaption, div.caption {
 .frontPageCaption {
   top: 50px; }
 
+.spacer {
+  height: 2vh;
+  width: 100vw; }
+
 .contactInfoBox .contact-details, .contactInfoBox .contactFormHeader, .contact-details .contact-details, .contact-details .contactFormHeader {
   text-align: center; }
 
@@ -101,11 +105,12 @@ label {
 
 .services-img {
   width: 90vw;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
+  -ms-transform: translate(-50%, -50%);
+  padding: 4vh 0; }
 
 .fa .fa-angle-double-down {
   bottom: 0;
@@ -188,6 +193,10 @@ footer {
 
   .services-img {
     width: 40vw; }
+
+  .spacer {
+    height: 10vh;
+    width: 100vw; }
 
   @keyframes show {
     0% {
