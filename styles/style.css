@@ -27,7 +27,8 @@ p {
 
 h3 {
   text-align: center;
-  margin: 2vh; }
+  margin: 2vh;
+  color: #999; }
 
 #active {
   text-decoration: underline; }
@@ -78,8 +79,33 @@ label {
   margin-top: 1rem;
   margin-bottom: 0; }
 
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e6e6e6; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #e6e6e6; }
+
+#submit {
+  color: #ffb84d; }
+
+#submit:hover {
+  background-color: grey; }
+
 .services-img {
-  width: 90vw; }
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 .fa .fa-angle-double-down {
   bottom: 0;
@@ -182,5 +208,8 @@ footer {
       margin-top: 80px; }
     100% {
       margin-top: -400px; } } }
+@media (min-width: 992px) {
+  .services-img {
+    width: 30vw; } }
 
 /*# sourceMappingURL=style.css.map */
